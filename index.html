@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>ML API</title>
+    <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="../static/css/style.css">
+
+    <style>
+        .login {
+            top: 20%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Global_active_power</h1>
+    <div class="login">
+
+
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="/login" method="post">
+            <label for="Global_reactive_power"> Global_reactive_power</label>
+            <input type="float" name="Global_reactive_power" placeholder="Enter Global_reactive_power" id="Global_reactive_power" required="required" />
+
+            <label for="Voltage">Voltage</label>
+            <input type="float" name="Voltage" placeholder="Enter Voltage" id="Voltage" required="required" />
+
+            <label for="Global_intensity">Global_intensity </label>
+            <input type="float" name="Global_intensity" placeholder="Enter Global_intensity" id="Global_intensity" required="required" />
+
+            <label for="Sub_metering_1">Sub_metering_1</label>
+            <input type="float" name="Sub_metering_1" placeholder="Enter Sub_metering_1" id="Sub_metering_1" required="required" />
+
+            <label for="Sub_metering_2">Sub_metering_2</label>
+            <input type="float" name="Sub_metering_2" placeholder="Enter Sub_metering_2" id="Sub_metering_2" required="required" />
+
+            <label for="Sub_metering_3">Sub_metering_3</label>
+            <input type="float" name="Sub_metering_3" placeholder="Enter Sub_metering_3" id="Sub_metering_3" required="required" />
+
+        
+            <button type="submit" class="btn btn-primary  btn-large">click</button>
+            <button>ACTIVE_POWER:{{y}}</button>
+            
+        
+        </form>
+
+        
+
+    </div>
+
+
+</body>
+
+</html>
